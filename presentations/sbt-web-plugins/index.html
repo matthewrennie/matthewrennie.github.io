@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Contributing to sbt-web plugin development</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="Presentation ">
+		<meta name="author" content="Matthew Rennie">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -43,31 +43,91 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
+					<h1>sbt-web plugin<h1><h1>development</h1>
+					<h3>Contributing to better web asset management in the Play! Framework</h3>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small>Presented by <a href="http://matthewrennie.github.io">Matthew Rennie</a></small>
 					</p>
-				</section>
+				</section>				
 
-				<section data-markdown>
-				    <script type="text/template">
-				        ## Page title
-
-				        A paragraph with some text and a [link](http://hakim.se).
-				    </script>
+				<section>
+					<h2>Backround: About the <a href="http://www.playframework.org">Play! Framework</a></h2>
+					<small><a href="http://www.playframework.org">http://www.playframework.org</a></small>
+					<ul>
+						<li>JVM-based Web framework for Scala (and Java) </li>
+						<li>Actively Developed and Open Souce</li>
+						<li>Stateless and asynchronous</li>
+						<li>Wraps <a href="http://www.sbt.org">SBT</a>(Simple Build Tool)</li>
+						<li>Apache 2 License</li>
+						<li>Supported by <a href="http://www.typesafe.com">Typesafe</a></li>
+					</ul>					
 				</section>
 
 				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
+					<h2>Background: About <a href="http://github.com/sbt-web">sbt-web</a></h2>
+					<small><a href="http://github.com/sbt-play">http://github.com/sbt-play</a></small>
+					<ul>
+						<li>sbt plugin for the management of web assets</li>
+						<li>Asset management refactored out of Play Core in v2.3</li>
+						<li>Enables a family of sbt plugins to be community developed</li>
+						<li>Independant of Play so it can grow on its own</li>
+						<li>Leverages WebJars, Node API, NPM</li>
+						<li>Scalas answer to Grunt, Gulp, etc</li>
+					</ul>	
 
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						<ul>
+							<li>discuss robust build tool sbt</li>
+							<li>Node at compile time, not runtime</li>
+						</ul>												
 					</aside>
+
+				</section>
+
+				<section>
+					<h2>Why contribute to sbt-web?</h2>
+
+					<ul>
+						<li>Personal pain</li>
+						<li>JVM web frameworks lag behind Node frameworks</li>
+						<li>Desire to leverage superior Node API and (massive) Node community</li>
+						<li>Brand new project</li>
+						<li>Plugins are uncoupled from sbt-web</li>
+						<li>Challenging to develop</li>
+						<li>Plugins have potential for wide distribution</li>
+					</ul>					
+
+				</section>
+
+				<section>
+					<h2>Anatomy of an sbt-web plugin</h2>
+
+					<ul>
+						<li>Personal pain</li>						
+					</ul>					
+
+				</section>
+
+				<section>
+
+					<h2>Plugin 1: sbt-jst</h2>
+					<small><a href="http://github.com/matthewrennie/sbt-jst">http://github.com/matthewrennie/sbt-jst</a></small>
+
+					<p>Precompiles [Underscore](http://underscorejs.org) templates to JST files. Based on [grunt-contrib-jst](https://www.npmjs.org/package/grunt-contrib-jst).</p>
+
+					<small>Demonstration: <a href="http://github.com/matthewrennie/play-sbt-web-tester">http://github.com/matthewrennie/play-sbt-web-tester</a></small>
+
+				</section>
+
+				<section>
+
+					<h2>Plugin 2: sbt-autoprefixer</h2>
+					<small><a href="http://github.com/matthewrennie/sbt-jst">http://github.com/matthewrennie/sbt-jst</a></small>
+
+					<p>Precompiles [Underscore](http://underscorejs.org) templates to JST files. Based on [grunt-contrib-jst](https://www.npmjs.org/package/grunt-contrib-jst).</p>
+
+					<small>Demonstration: <a href="http://github.com/matthewrennie/play-sbt-web-tester">http://github.com/matthewrennie/play-sbt-web-tester</a></small>
+
 				</section>
 
 				<!-- Example of nested vertical slides -->
