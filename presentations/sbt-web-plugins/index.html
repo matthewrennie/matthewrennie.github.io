@@ -48,7 +48,20 @@
 					<p>
 						<small>Presented by <a href="http://matthewrennie.github.io">Matthew Rennie</a></small>
 					</p>
-				</section>				
+				</section>		
+
+				<section>
+					<h2>Web Asset Management</a></h2>					
+					<ul>
+						<li>Web Assets - software artifacts consumed by the browser</li>
+						<li>e.g. javascript, CSS, fonts, images, etc</li>
+						<li>Management Tasks include:</li>
+						<li><a href="#">building of assets</a> (pre/post-processing and linting)</li>
+						<li><a href="#">staging of assets</a> for consumption (concatenation, optimization and minification)</li>
+						<li><a href="#">deployment</a></li>
+						<li>JVM Based frameworks lag Node frameworks</li>
+					</ul>					
+				</section>		
 
 				<section>
 					<h2>Background: About the <a href="http://www.playframework.org">Play! Framework</a></h2>
@@ -65,10 +78,11 @@
 
 				<section>
 					<h2>Background: About <a href="http://github.com/sbt-web">sbt-web</a></h2>
-					<small><a href="http://github.com/sbt-play">http://github.com/sbt-play</a></small>
+					<small><a href="http://github.com/sbt-web">http://github.com/sbt-web</a></small>
 					<ul>
 						<li>sbt plugin for the management of web assets</li>
 						<li>Asset management refactored out of Play Core in v2.3</li>
+						<li><a href="#">Web Asset Management is part of the sbt compilation process</a></li>												
 						<li>Enables a family of sbt plugins to be community developed</li>
 						<li>Independant of Play so it can grow on its own</li>
 						<li>Leverages <a href="http://www.webjars.org">WebJars</a>, <a href="http://www.node.org">Node API</a>, <a href="http://www.npm.org">NPM</a></li>
@@ -106,6 +120,7 @@
 						<li>Suggested published list of planned plugins</li>
 						<li>Made plugin suggestions</li>
 						<li>Opened a discussion on better <a href="http://www.npm.org">NPM</a> vs <a href="http://www.webjars.org">WebJar</a> support for production</li>
+						<li>Contributed a node-accessible version of underscore to the WebJars project</li>
 						<li>Built two plugins (pull requests pending - signed <a href="http://www.typesafe">Typesafe CLA</a> required)</li>			
 					</ul>					
 
@@ -118,7 +133,7 @@
 						<li>Asset Pipeline: source tasks and asset tasks</li>
 						<li>Scala component (sbt plugin) and Node component (shell script)</li>
 						<li>sbt plugin test cases (<a href="#TODO">scripted</a>)</li>
-						<li>tester application</li>
+						<li>test application</li>
 					</ul>					
 
 				</section>
@@ -174,9 +189,12 @@ pipelineStages := Seq(autoprefixer)
 
 				<section>
 
-					<h2>Next steps:</h2>				
+					<h2>Conclusion and Future Work:</h2>				
 
 					<ul>
+						<li>encountered challenges associated with immature open source projects</li>
+						<li>these include lack of documentation, code base in flux</li>
+						<li>push for the broader adoption of NPM vs WebJars for package management</li>
 						<li>pull requests for known plugins</li>
 						<li>sbt-handlebars?</li>
 						<li>sbt-jasmine?</li>
